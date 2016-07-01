@@ -3,12 +3,44 @@
   <head>
     <title>Thomas: This Is His Blog</title>
     <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,400italic' rel='stylesheet' type='text/css'>
     <link href="styles/main.css" rel="stylesheet" type="text/css">
+    <link href="styles/responsive.css" rel="stylesheet" type="text/css">
   </head>
   
   <body>
- <p>test</p>
-   
+    <div class="row" id="nav">
+      <div class="col-6" id="logo">
+        THOMASJROBSON
+      </div>
+      <div class="col-6" id="nav-buttons">
+        <ul>
+          <li><a href="blog/">BLOG</a></li>
+          <li><a href="contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="nav-buffer"></div>
+    <div class="row">
+      <div class="col-12">
+        <img id="banner" src="images/dogbanner.jpg" alt="banner image of dogs"/>
+      </div>
+    </div>
+    <div class="row content">
+      <div class="col-4">
+        <div class="post">
+          <a class="post-link" href="#">
+            <img class="post-image" src="images/testdog.jpg" alt=""/>
+            <div class="post-info">
+              <h3>My Reflections</h3>
+              <p class="date">2nd July, 2016</p>
+            </div>
+          </a>
+        </div>  
+      </div>
+    </div>
+
+
   
   </body>
 </html>
