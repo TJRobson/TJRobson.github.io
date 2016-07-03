@@ -24,6 +24,7 @@ a {
   box-shadow: 0 7px 5px #eeeeee;
   overflow: hidden;
   position: fixed;
+  z-index: 10;
   background-color: white;
 }
 
