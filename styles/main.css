@@ -10,6 +10,7 @@ h3 {
   font-weight: 540;
   padding: 0;
   margin: 0;
+  padding-top: 10px;
 }
 
 a {
@@ -290,11 +291,13 @@ a.disable {
   filter: contrast(120%) brightness(120%);
 }
 
-p {
+p, ul {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   padding: 20px 0;
   margin: 0;
   color: #555;
   text-align: justify;
+  list-style-type: none;
 }
+
