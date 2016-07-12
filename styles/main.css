@@ -149,7 +149,7 @@ a.disable {
   color: #000000;
 }
 
-#nav-buttons a:hover{
+#nav-buttons a:hover {
   color: #666;
 } 
 
@@ -172,7 +172,7 @@ a.disable {
   margin-bottom: 15%; 
 }
 
-#new-feature {
+.post, .new-feature {
   position: relative;
 }
 
@@ -301,3 +301,6 @@ p, ul {
   list-style-type: none;
 }
 
+a:hover {
+  color: #888;
+} 
