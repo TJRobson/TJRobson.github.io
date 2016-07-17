@@ -1,0 +1,103 @@
+* {
+  font-family: 'Arapey', serif; 
+} 
+
+body {
+  background-color: #f2f2f2;
+}
+
+#head {
+  position: relative;
+  display: block;
+  background-color: rgba(51,55,69,0.9);
+  z-index: 3;
+}
+
+.header {
+  position: relative;
+  border-bottom: 1rem solid white;
+  
+}
+
+.title {
+  color:white;
+  text-align: center;
+  line-height: 1em;
+
+}
+
+#my-name {
+  padding-top: 2rem;
+  font-size: 6rem;
+  font-weight: 300;
+  letter-spacing: .9rem;
+  margin-bottom: 0;
+}
+
+#subject {
+  padding-bottom: 2rem;
+  font-size: 3.5rem;
+  font-weight: 200;
+  letter-spacing: .7rem; 
+}
+
+#triangle-wrap {
+  position: relative;
+  overflow: visible;
+  padding-bottom: 12rem;
+}
+
+#white {
+  position: absolute;
+  top:0 !important; 
+  width: 0;
+  height: 0;
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+  border-top: 26vw solid white;
+  z-index: 2;
+  pointer-events:none;
+}
+
+
+/*Start of nav bar*/
+
+#navbar-list {
+  text-decoration: none;
+  background-color: rgba(51,55,69,0.4);
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  position: relative;
+  z-index: 1;
+
+}
+
+#navbar-list li {
+  float: right;
+  list-style-type: none;
+}
+
+#navbar-list li:first-of-type {
+  float: left;
+}
+
+.nav-button a {
+  display: inline-block;
+  height: 38px;
+  padding: 0.5rem 2rem;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .25rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+#navbar-list li a{
+  width: 100%;
+}
