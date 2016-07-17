@@ -2,10 +2,15 @@
   font-family: 'Arapey', serif; 
 } 
 
+.container {
+  width: 100%;
+}
+
 body {
   background-color: #f2f2f2;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 #head {
@@ -27,6 +32,175 @@ body {
   line-height: 1em;
 
 }
+
+#my-name {
+  padding-top: 2.5rem;
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: 1.6rem;
+  margin-bottom: 0;
+}
+
+#subject {
+  padding-bottom: .1rem;
+  font-size: 2rem;
+  font-weight: 100;
+  letter-spacing: .9rem; 
+}
+
+#triangle-wrap {
+  position: relative;
+  overflow: visible;
+  width: 100%;
+  height: 0;
+}
+
+#rotated {
+    position: absolute;
+    display: inline-block;
+    height: 0; 
+    width:100%;
+    min-width: 1200px;
+    color: white;
+    background: white;
+    padding-bottom:0;
+    background-clip:content-box;
+    overflow: visible;
+}
+
+#rotated:after {
+    content: "";
+    position: absolute;
+    top:-330px; 
+    left: 0;
+    background-color:inherit;
+    padding-bottom:50%; 
+    width:57.7%;
+    z-index: 4;
+    -webkit-transform-origin:0 0;
+    -ms-transform-origin:0 0;
+    transform-origin:0 0;
+    -webkit-transform: rotate(-30deg) skewX(30deg);;
+    -ms-transform: rotate(-30deg) skewX(30deg);
+    transform: rotate(-30deg) skewX(30deg);
+}
+
+/*@media makes triangle center in screen when screen width is less than 1200px*/ 
+
+@media (max-width: 1200px){
+  #rotated:after{
+    left: calc(50vw - 600px);
+  }
+}
+
+
+/*Start of nav bar*/
+
+#navbar-list {
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+#navbar-list li {
+  float: right;
+  list-style-type: none;
+  border-bottom: 0.1rem solid white;
+  background-color: rgba(51,55,69,0.4);
+  margin: 0;
+}
+
+#navbar-list li:first-of-type {
+  float: left;
+}
+
+.nav-button a {
+  display: inline-block;
+  height: 38px;
+  padding: 0.5rem 2rem;
+  color: white;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 38px;
+  letter-spacing: .6rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+#navbar-list li a{
+  width: 100%;
+}
+
+/*start of content area*/
+
+.docs-section {
+  background-color: rgba(255,255,255,0.5);
+  padding-bottom: 8rem;
+}
+
+.pic-frame {
+  margin-top: 6rem;
+  width: 80%;
+  padding-bottom: 40%;
+  overflow: hidden;
+  position: relative;
+  margin-left: 10%;
+}
+
+.post-image {
+  width: 100%;
+  position: absolute;
+}
+
+.post-info {
+  position: absolute;
+  width: 95%;
+  margin-top: 6rem;
+  margin-left: 2.5%;
+  text-align: center;
+  color: white;
+}
+
+.post-info h3 {
+  font-size: 4rem;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  margin-bottom: 0;
+  line-height: 3rem;
+}
+
+.post-info p {
+  font-size: 1.5rem;
+  font-weight: 200;
+  letter-spacing: 0.4rem;
+  margin-bottom: 0;
+}
+
+/*footer*/
+
+#footer {
+  position: relative;
+  display: block;
+  background-color: rgba(51,55,69,0.9);
+}
+
+#footer p {
+  margin-top: 1rem;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 200;
+  letter-spacing: 0.3rem;
+}
+
+
+@media (min-width: 750px) {
+
 
 #my-name {
   padding-top: 2rem;
@@ -104,8 +278,10 @@ body {
 }
 
 #navbar-list li {
+  border: none;
   float: right;
   list-style-type: none;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 #navbar-list li:first-of-type {
@@ -113,61 +289,27 @@ body {
 }
 
 .nav-button a {
-  display: inline-block;
-  height: 38px;
-  padding: 0.5rem 2rem;
-  color: white;
-  text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 38px;
   letter-spacing: .25rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  cursor: pointer;
-  box-sizing: border-box;
-}
-
-#navbar-list li a{
-  width: 100%;
 }
 
 /*start of content area*/
 
-.docs-section {
-  background-color: rgba(255,255,255,0.5);
-
-}
-
-.pic-frame {
-  margin-top: 6rem;
-  width: 80%;
-  padding-bottom: 40%;
-  overflow: hidden;
-  position: relative;
-  margin-left: 10%;
-}
-
-.post-image {
-  width: 100%;
-  position: absolute;
-}
 
 .post-info {
-  position: absolute;
   width: 80%;
   margin-top: 10rem;
   margin-left: 10%;
-  text-align: center;
-  color: white;
 }
 
 .post-info h3 {
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: 500;
   letter-spacing: 1rem;
   margin-bottom: 0;
+  line-height: 6rem;
 }
 
 .post-info p {
@@ -175,4 +317,5 @@ body {
   font-weight: 300;
   letter-spacing: 0.4rem;
   margin-bottom: 0;
+}
 }
