@@ -11,6 +11,10 @@ li p {
   text-align: center;
 }
 
+li {
+  list-style-type: none;
+}
+
 h5 {
   text-align: center;
 }
@@ -25,6 +29,10 @@ body {
   width: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+.no-decoration {
+  text-decoration: none;
 }
 
 #head {
@@ -169,7 +177,7 @@ body {
   width: 100%;
 }
 
-/*start of content area*/
+/*start of content area main*/
 
 .docs-section {
   background-color: rgba(255,255,255,0.5);
@@ -215,8 +223,49 @@ body {
   letter-spacing: 0.25rem;
   margin-bottom: 0;
   color: rgba(255,255,255,0.5);
+}  
+
+ /*blog post temp and stylings*/ 
+
+.post-frame {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 2rem;
+  padding: 2rem .5rem; 
+} 
+
+.post-frame h4, p {
+  text-align: center;
+}
+
+.post-frame h4 {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-top: 3rem;
+  margin-bottom: 0rem;
+  color: rgba(51,55,69,0.8);
+}
+
+
+.post-date  {
+  font-style: italic;
+}
+
+.post-frame h5 {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+.post-blog {
+
+ }
+
+.post-frame {
 
 }
+
+
+
 
 @media (min-width: 550px) {
 
