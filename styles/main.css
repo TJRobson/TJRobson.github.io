@@ -181,17 +181,17 @@ body {
 
 .docs-section {
   background-color: rgba(255,255,255,0.5);
-  padding-bottom: 8rem;
+  padding-bottom: 5rem;
 
 }
 
 .pic-frame {
-  margin-top: 6rem;
-  width: 80%;
-  padding-bottom: 40%;
+  margin-top: 3rem;
+  width: 90%;
+  padding-bottom: 45%;
   overflow: hidden;
   position: relative;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 .post-image {
@@ -254,6 +254,10 @@ body {
 .post-frame h5 {
   font-size: 2.3rem;
   font-weight: 500;
+}
+
+img {
+  display: inline-block;
 }
 
 .post-blog {
@@ -442,7 +446,12 @@ body {
   font-weight: 300;
   letter-spacing: 0.4rem;
   margin-bottom: 0;
-  
-
 }
+
+.pic-frame {
+  margin-top: 6rem;
+  width: 80%;
+  padding-bottom: 40%;
+  margin-left: 10%;
+} 
 }
