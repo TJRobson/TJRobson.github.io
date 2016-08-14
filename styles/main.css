@@ -1,7 +1,7 @@
 * {
   font-family: 'Arapey', serif;
-  color: #666666;  
-} 
+  color: #666666;
+}
 
 li p {
   font-size: 1.8rem;
@@ -45,7 +45,7 @@ body {
 .header {
   position: relative;
   border-bottom: 1rem solid white;
-  
+
 }
 
 #tri-holder {
@@ -85,7 +85,7 @@ body {
   padding-bottom: .1rem;
   font-size: 2rem;
   font-weight: 100;
-  letter-spacing: .9rem; 
+  letter-spacing: .9rem;
 }
 
 #triangle-wrap {
@@ -99,7 +99,7 @@ body {
 #rotated {
   position: absolute;
   display: inline-block;
-  height: 0; 
+  height: 0;
   width:100%;
   min-width: 1200px;
   color: white;
@@ -112,10 +112,10 @@ body {
 #rotated:after {
   content: "";
   position: absolute;
-  top:-330px; 
+  top:-330px;
   left: 0;
   background-color:inherit;
-  padding-bottom:50%; 
+  padding-bottom:50%;
   width:57.7%;
   z-index: 4;
   -webkit-transform-origin:0 0;
@@ -126,7 +126,7 @@ body {
   transform: rotate(-30deg) skewX(30deg);
 }
 
-/*@media makes triangle center in screen when screen width is less than 1200px*/ 
+/*@media makes triangle center in screen when screen width is less than 1200px*/
 
 @media (max-width: 1200px){
   #rotated:after{
@@ -223,16 +223,16 @@ body {
   letter-spacing: 0.25rem;
   margin-bottom: 0;
   color: rgba(255,255,255,0.5);
-}  
+}
 
- /*blog post temp and stylings*/ 
+ /*blog post temp and stylings*/
 
 .post-frame {
   text-align: justify;
   text-justify: inter-word;
   line-height: 2rem;
-  padding: 2rem .5rem; 
-} 
+  padding: 2rem .5rem;
+}
 
 .post-frame h4, p {
   text-align: center;
@@ -264,9 +264,6 @@ img {
 
  }
 
-.post-frame {
-
-}
 
 
 
@@ -340,7 +337,7 @@ img {
   padding-bottom: 2rem;
   font-size: 3.5rem;
   font-weight: 200;
-  letter-spacing: .7rem; 
+  letter-spacing: .7rem;
 }
 
 #triangle-wrap {
@@ -355,7 +352,7 @@ img {
 #rotated {
     position: absolute;
     display: inline-block;
-    height: 0; 
+    height: 0;
     width:100%;
     min-width: 1200px;
     color: white;
@@ -368,10 +365,10 @@ img {
 #rotated:after {
     content: "";
     position: absolute;
-    top:-20px; 
+    top:-20px;
     left: 0;
     background-color:inherit;
-    padding-bottom:50%; 
+    padding-bottom:50%;
     width:57.7%;
     z-index: 2;
     -webkit-transform-origin:0 0;
@@ -382,7 +379,7 @@ img {
     transform: rotate(-30deg) skewX(30deg);
 }
 
-/*@media makes triangle center in screen when screen width is less than 1200px*/ 
+/*@media makes triangle center in screen when screen width is less than 1200px*/
 
 @media (max-width: 1200px){
   #rotated:after{
@@ -437,7 +434,7 @@ img {
   letter-spacing: 1rem;
   margin-bottom: 0;
   line-height: 6rem;
-  
+
 
 }
 
@@ -453,5 +450,5 @@ img {
   width: 80%;
   padding-bottom: 40%;
   margin-left: 10%;
-} 
+}
 }
